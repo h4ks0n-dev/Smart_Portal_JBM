@@ -1,0 +1,233 @@
+{
+  "settings": {
+    "companyName": "JB Mechanical Metal Industries LLC",
+    "slogan": "Precision in Motion. Expertise at Work.",
+    "emailDomain": "jbmech.net"
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "System Administrator",
+      "email": "admin@jbmech.net",
+      "role": "Admin",
+      "department": "IT",
+      "password": "Admin@123",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "HR Manager",
+      "email": "hr@jbmech.net",
+      "role": "HR",
+      "department": "HR",
+      "password": "HrDepart@26",
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "IT Support",
+      "email": "it@jbmech.net",
+      "role": "IT",
+      "department": "IT",
+      "password": "ItDepart@26",
+      "active": true
+    },
+    {
+      "id": 4,
+      "name": "Accounts Department",
+      "email": "accounts@jbmech.net",
+      "role": "Department User",
+      "department": "Accounts",
+      "password": "AccDepart@26",
+      "active": true
+    },
+    {
+      "id": 5,
+      "name": "Sales Department",
+      "email": "sales@jbmech.net",
+      "role": "Department User",
+      "department": "Sales",
+      "password": "SalesDep@26",
+      "active": true
+    },
+    {
+      "id": 6,
+      "name": "Operation Department",
+      "email": "operation@jbmech.net",
+      "role": "Department User",
+      "department": "Operation",
+      "password": "OperDep@26",
+      "active": true
+    },
+    {
+      "id": 7,
+      "name": "Estimation Department",
+      "email": "estimation@jbmech.net",
+      "role": "Department User",
+      "department": "Estimation",
+      "password": "EstDep@26",
+      "active": true
+    },
+    {
+      "id": 8,
+      "name": "Managing Director",
+      "email": "biju@jbmech.net",
+      "role": "Management",
+      "department": "Management",
+      "password": "Mdbiju@123",
+      "active": true
+    }
+  ],
+  "tickets": [
+    {
+      "id": "IT-0001",
+      "department": "Accounts",
+      "requester": "Accounts Department",
+      "category": "Printer",
+      "problem": "Printer not printing",
+      "priority": "Medium",
+      "status": "Resolved",
+      "assignedTo": "IT Support",
+      "description": "Test ticket",
+      "createdAt": "2026-09-24T08:10:00Z",
+      "updatedAt": "2026-09-24T09:15:00Z"
+    },
+    {
+      "id": "IT-0002",
+      "department": "HR",
+      "requester": "HR Manager",
+      "category": "Attendance",
+      "problem": "Attendance terminal issue",
+      "priority": "High",
+      "status": "In Progress",
+      "assignedTo": "IT Support",
+      "description": "Attendance device needs checking",
+      "createdAt": "2026-09-24T09:20:00Z",
+      "updatedAt": "2026-09-24T10:00:00Z"
+    }
+  ],
+  "assets": [
+    {
+      "id": "JB-IT-PC-001",
+      "type": "Computer",
+      "name": "Accounts PC",
+      "department": "Accounts",
+      "user": "Employee",
+      "model": "Dell OptiPlex",
+      "serial": "DEMO-001",
+      "ip": "192.168.100.101",
+      "status": "Active"
+    },
+    {
+      "id": "PRN-001",
+      "type": "Printer",
+      "name": "Accounts Printer",
+      "department": "Accounts",
+      "user": "",
+      "model": "HP LaserJet",
+      "serial": "PRN-DEMO-001",
+      "ip": "192.168.100.201",
+      "status": "Operational"
+    },
+    {
+      "id": "CAM-001",
+      "type": "CCTV",
+      "name": "Main Entrance",
+      "department": "Security",
+      "user": "",
+      "model": "Hikvision",
+      "serial": "CAM-DEMO-001",
+      "ip": "192.168.100.242",
+      "status": "Active"
+    },
+    {
+      "id": "SW-001",
+      "type": "Network",
+      "name": "Main Switch",
+      "department": "IT",
+      "user": "",
+      "model": "Managed Switch",
+      "serial": "SW-DEMO-001",
+      "ip": "192.168.100.2",
+      "status": "Active"
+    }
+  ],
+  "purchases": [
+    {
+      "id": "PR-0001",
+      "item": "HP Toner",
+      "quantity": 2,
+      "department": "Accounts",
+      "estimatedCost": 480,
+      "reason": "Printer toner required",
+      "urgency": "Normal",
+      "status": "Pending Department Approval",
+      "requester": "Accounts Department",
+      "createdAt": "2026-09-24T07:30:00Z"
+    }
+  ],
+  "employees": [],
+  "maintenance": [
+    {
+      "id": "MNT-0001",
+      "assetType": "CCTV",
+      "title": "Monthly CCTV health check",
+      "frequency": "Monthly",
+      "nextDue": "2026-10-01",
+      "owner": "IT",
+      "status": "Scheduled"
+    },
+    {
+      "id": "MNT-0002",
+      "assetType": "Computer",
+      "title": "Windows / Defender / disk health check",
+      "frequency": "Monthly",
+      "nextDue": "2026-10-05",
+      "owner": "IT",
+      "status": "Scheduled"
+    },
+    {
+      "id": "MNT-0003",
+      "assetType": "Printer",
+      "title": "Printer test / toner / cleaning",
+      "frequency": "Monthly",
+      "nextDue": "2026-10-07",
+      "owner": "IT",
+      "status": "Scheduled"
+    }
+  ],
+  "inventory": [
+    {
+      "id": "INV-0001",
+      "item": "Printer Paper",
+      "category": "Stationery",
+      "quantity": 20,
+      "minQuantity": 10,
+      "unit": "reams"
+    },
+    {
+      "id": "INV-0002",
+      "item": "HP Toner",
+      "category": "Printer Consumable",
+      "quantity": 2,
+      "minQuantity": 3,
+      "unit": "pcs"
+    },
+    {
+      "id": "INV-0003",
+      "item": "LAN Cable Cat6",
+      "category": "IT Consumable",
+      "quantity": 12,
+      "minQuantity": 5,
+      "unit": "pcs"
+    },
+    {
+      "id": "INV-0004",
+      "item": "RJ45 Connector",
+      "category": "IT Consumable",
+      "quantity": 18,
+      "minQuantity": 10,
+      "unit": "pcs"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JB Smart Office</title><meta name="theme-color" content="#0b66a8">
+<link rel="icon" href="/assets/jb-logo.png"><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="login" class="login-shell">
+  <div class="login-brand"><img src="/assets/jb-logo.png" alt="JB Mechanical logo"><div><div class="eyebrow">JB MECHANICAL</div><h1>Smart Office</h1><p id="loginSlogan">Precision in Motion. Expertise at Work.</p></div></div>
+  <div class="login-card">
+    <div class="login-title"><span>Company Portal</span><strong>Sign in with your department account</strong><small>Use your official <b>@jbmech.net</b> email address.</small></div>
+    <form id="loginForm"><label>Company Email<input id="email" type="email" autocomplete="username" placeholder="name@jbmech.net" required></label><label>Password<input id="password" type="password" autocomplete="current-password" placeholder="Enter password" required></label><button class="primary wide">Sign in securely</button><div id="loginError" class="error hidden"></div></form>
+  </div>
+  <div class="login-foot">Internal company system • IT & Administration</div>
+</div>
+
+<div id="app" class="hidden">
+  <aside class="sidebar">
+    <div class="side-brand"><img src="/assets/jb-logo.png" alt="JB"><div><b>JB Smart Office</b><span id="sideSlogan">Precision in Motion. Expertise at Work.</span></div></div>
+    <div class="workspace"><span class="workspace-dot"></span><span>Company Workspace</span></div>
+    <nav id="nav">
+      <button data-view="dashboard" class="active"><i>⌂</i> Dashboard</button>
+      <button data-view="tickets"><i>◈</i> IT Helpdesk</button>
+      <button data-view="assets" data-roles="Admin,IT"><i>▣</i> Assets</button>
+      <button data-view="purchases"><i>₳</i> Purchasing</button>
+      <button data-view="inventory" data-roles="Admin,IT,HR,Management"><i>◫</i> Inventory</button>
+      <button data-view="employees" data-roles="Admin,HR,IT"><i>♙</i> Employee Lifecycle</button>
+      <button data-view="maintenance" data-roles="Admin,IT"><i>⚙</i> Maintenance</button>
+      <button data-view="reports" data-roles="Admin,Management,HR,IT"><i>▤</i> Reports</button>
+      <button data-view="users" data-roles="Admin"><i>◎</i> User Management</button>
+    </nav>
+    <div class="side-bottom"><div class="security-chip">🔒 Internal • Authenticated</div><div class="side-company" id="sideCompany">JB Mechanical Metal Industries LLC</div></div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="mobile-menu"><button id="menuBtn">☰</button></div>
+      <div><div class="breadcrumb">JB SMART OFFICE / <span id="crumb">DASHBOARD</span></div><h2 id="title">Dashboard</h2><p id="subtitle">Company-wide operational overview</p></div>
+      <div class="top-actions"><div class="server-pill"><span class="pulse"></span> Server connected</div><div class="user-menu"><div class="avatar" id="avatar">U</div><div><b id="userName">User</b><span id="userDept">Department</span></div><button id="changePassword" onclick="openPassword()">Password</button><button id="logout">Logout</button></div></div>
+    </header>
+    <section id="content"></section>
+  </main>
+</div>
+<div id="toast" class="toast"></div>
+<div id="modal" class="modal hidden"><div class="modal-card"><button class="x" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
+<script src="/app.js"></script>
+</body></html>
